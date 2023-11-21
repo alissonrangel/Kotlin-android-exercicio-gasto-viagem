@@ -21,15 +21,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         text_view = findViewById(R.id.text_total_value)
 
-        // implementando a interface View.OnClickListener
+        //MODO 1
+        // implementando a interface View.OnClickListener, pode usar o this
         binding.btnCalculate.setOnClickListener(this)
 
+        //MODO 2 COM FUNÇÃO ANÔNIMA
         binding.editPrice.setOnClickListener(object :  View.OnClickListener{
             override fun onClick(v: View?) {
                 Toast.makeText( this@MainActivity, "Fui Clicado edit text!!!", Toast.LENGTH_LONG).show()
             }
 
         })
+
+        //MODO 3 COM LAMBDA
         binding.editDistance.setOnClickListener {
             Toast.makeText(
                 this@MainActivity,
@@ -73,7 +77,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun testclick(view: View) {
-        calculate()
+        //context -> é a aplicação viva, rodando
+        Toast.makeText(this, "Fui Clicado!!!", Toast.LENGTH_LONG).show()
     }
 
 }

@@ -4,7 +4,7 @@
     <string name="validation">Preencha todos os campos!!!</string>
     <string name="validation2">Não pode ter valor igual a 0!!!</string>
     <string name="distancia">Distância</string>
-    <string name="total_de_quilometros">Total de quilometros</string>
+    <string name="total_de_quilometros">Total de quilômetros</string>
     <string name="price">Preço</string>
     <string name="preco_por_litro">Preço por Litro</string>
     <string name="kms_por_litro">KMs por Litro</string>
@@ -12,4 +12,5 @@
     <string name="rs_0">R$ 0,00</string>
     <string name="calcular">Calcular</string>
     <string name="gasto_viagem">Gasto Viagem</string>
+    <string name="click">Clicar</string>
 </resources>
